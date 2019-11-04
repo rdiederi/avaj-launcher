@@ -1,4 +1,4 @@
-package za.co.bngweny;
+package za.co.rdiederi;
 
 import za.co.Exceptions.InvalidCoordinateException;
 import za.co.Exceptions.TypeNotFoundException;

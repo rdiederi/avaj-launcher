@@ -1,4 +1,4 @@
-package za.co.bngweny;
+package za.co.rdiederi;
 
 public class WeatherProvider
 {
@@ -15,10 +15,8 @@ public class WeatherProvider
 
     public static String getCurrentWeather(Coordinates c) 
     {
-        //Must take into account point coordinates
         int den = c.getHeight() + c.getLatitude() + c.getLongitude();
         den = den + (int)(Math.random() * 4);
         return weather[den % 4];
     }
-
 }

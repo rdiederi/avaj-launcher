@@ -1,4 +1,4 @@
-package za.co.bngweny;
+package za.co.rdiederi;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -31,11 +31,9 @@ public class Main {
 		} catch (NumberFormatException ex) {
 			System.out.println(ex);
 		}
-
 	}
 
 	public static void main(String[] args) {
-
 		ArrayList<String[]> mylist = new ArrayList<>();
 		if (args.length == 1) {
 			try {
@@ -50,14 +48,12 @@ public class Main {
 					line = reader.readLine();
 				}
 				reader.close();
-				if(mylist.size() == 0)
-				{
+				if(mylist.size() == 0) {
 					throw new InvalidFormatException("invalid format! You have to add compnonents to the simulation");
 				}
 				runner(repeat, mylist);
 			}
-			catch(NumberFormatException ex)
-			{
+			catch(NumberFormatException ex) {
 				throw new InvalidFormatException("Invalid format! First line should be a number");
 			}
 			catch (Exception ex) {

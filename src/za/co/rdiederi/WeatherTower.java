@@ -1,4 +1,4 @@
-package za.co.bngweny;
+package za.co.rdiederi;
 
 public class WeatherTower extends Tower
 {

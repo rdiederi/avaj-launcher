@@ -1,4 +1,4 @@
-package za.co.bngweny;
+package za.co.rdiederi;
 
 import za.co.Exceptions.HeightTooLowException;
 
@@ -17,7 +17,6 @@ public class JetPlane extends Aircraft implements Flyable {
             this.coordinates.changeLatitude(10, "+");
             try {
                 this.coordinates.changeHeight(2, "+");
-
             } catch (HeightTooLowException ex) {
                 System.out.println(String.format("%s#%s(%d): MayDay!! Mayday!! JetPlane has reached the ground!", this, getFlyableName(), getFlyableID()));
             }
@@ -51,8 +50,7 @@ public class JetPlane extends Aircraft implements Flyable {
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "JetPlane";
     }
 
